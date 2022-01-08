@@ -1,0 +1,64 @@
+// _mixin.scss
+@use "sass:math"; // math 기능을 쓴다는 선언
+
+// unit
+$baseSize: 16;
+@mixin pxRem($name, $unit) {
+	#{$name}: #{$unit} + px;
+	#{$name}: math.div($unit, $baseSize) + rem; // math 기능을 써야 에러가 나지 않는다.
+}
+
+@mixin vw($unit, $val, $deviceWidth) {
+	@include pxRem($unit, $val);
+	#{$unit}: math.div($val, $deviceWidth) * 100 + vw;
+}
+
+// font
+@mixin fontSet {
+	font-family: $font_family_en, $font_family_kr, $font_family_common;
+}
+
+@mixin font ($size, $weight:false, $line:false){
+	@include pxRem(font-size, $size);
+	@if($weight) {
+		font-weight: $weight;
+	}
+	@if($line) {
+		line-height: $line;
+	}
+	@content;
+}
+
+
+
+// image
+$imgPath: '../../public/';
+
+// @mixin img와 @mixin full은 연결되어 있다(full 안에 img가 들어가 있음)
+// 먼저 img를 정의한 뒤에 img를 포함하고 있는 full을 정의해야 한다
+@mixin img($file, $size:initial, $position:50% 50%, $repeat:no-repeat) {
+	background : {
+		image: url(#{$imgPath}#{$file});
+		size: $size;
+		position: $position;
+		repeat: $repeat;
+	}
+	& > span {
+		display: block;
+		position: absolute; z-index: -1; clip: rect(0 0 0 0);
+		width: 0; height: 0; overflow: hidden;
+	}
+	@content;
+}
+@mixin full($file:false, $size:initial, $position:50% 50%, $repeat:no-repeat) {
+	display: block; width: 100%; height: 100%;
+	// $img가 초기값인 false일 경우에는 if문이 처리되지 않음
+	@if ($file) { 
+		@include img($file, $size, $position, $repeat) {
+			@content;
+		}
+	}
+}
+
+
+
