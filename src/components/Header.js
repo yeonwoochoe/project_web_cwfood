@@ -1,11 +1,11 @@
 import Searchbox from './Searchbox';
 import Unb from './Unb';
-import Nav from './Nav';
 import { Link } from 'react-router-dom';
 
 import '../style/Header.scss';
 
 import logo from './../cw_logo.svg';
+
 
 export default function Header(){
 
@@ -18,8 +18,8 @@ return (
       <Searchbox/>
       <Unb/>
     </div> 
-    <Nav/>
   </header>
+
 
   )
 }

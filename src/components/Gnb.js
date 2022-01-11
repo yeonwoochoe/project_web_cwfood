@@ -3,25 +3,20 @@ import styled from 'styled-components';
 import { FaAlignJustify } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
+let Maintitle = styled.div
+`
+color : #e30613
+`
+
 export default function Gnb (){
 
-
   const [isOpen, setOpen] = useState(true);  // 메뉴의 초기값을 true 설정
-  
   const toggleMenu = () => {
     setOpen(isOpen => !isOpen); // on,off 개념 boolean
     }
   
 
 
-
-  let Maintitle = styled.div
-  `
-  color : #e30613
-  `
-
-
-  
   return (
 
 
