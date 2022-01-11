@@ -1,4 +1,5 @@
 import Gnb from './Gnb';
+import '../style/Nav.scss';
 
 export default function Nav (){
 
