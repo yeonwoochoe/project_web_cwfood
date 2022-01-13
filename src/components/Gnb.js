@@ -17,43 +17,32 @@ export default function Gnb (){
     setOpen(isOpen => !isOpen); // on,off 개념 boolean
     }
 
-  const navList = [
-      {content:"청우식품", href:"/"
-    
-    },
+  const gnbTitle = [
+      {content:"청우식품", href:"/"},
       {content:"회사소개", href:"/"},
       {content:"청우소식", href:"/"},
       {content:"이벤트", href:'/' },
       {content:"인재채용" , href:'/'}
     ];
     
-
-
-
-
   return (
 
 
   <div className="gnb">
     <div className={isOpen ? "gnb_category" : "gnb_category on"} onClick={()=>toggleMenu()}>
     <ul className="category_inner"  >
-
-    { navList.map( (nav, idx)=>{
-
+    { gnbTitle.map( (nav, idx)=>{
       return (
         <li key={idx}>
           <div className="gnb_title">
           <NavLink to={nav.href}> 
-          {idx===0 && <FaAlignJustify/>} {nav.content}
+          {idx===0 && <FaAlignJustify className="menu_icon" />} {nav.content}
           </NavLink>
         </div>
         </li>
          )
       }) 
     }
-
-
-
 
     </ul>
   </div>

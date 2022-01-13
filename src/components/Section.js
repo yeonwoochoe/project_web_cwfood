@@ -5,6 +5,7 @@ export default function Section(){
 
   return (
   <section id="viewBox">
+     <h2 className="blind">광고영역</h2>
     <div className="container">
         <div class="indi_container">
           <ul class="indicator blind_wrap" >
