@@ -14,9 +14,11 @@
       display: flex; justify-content: space-evenly;
       width: 100%; height: 100%; align-items : center;
     @at-root .gnb_title{font-weight: 500;
-      & > a { @include full;
+      & > a { @include full;   
         .menu_icon {margin-right: 4px; 
-          transform: translateY(1.5px);}
+          transform: translateY(1.5px);
+        
+        }
       }
 
     }
