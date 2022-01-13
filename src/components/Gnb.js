@@ -1,12 +1,14 @@
 import React,{useState} from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import { FaAlignJustify } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
-let Maintitle = styled.div
-`
-color : #e30613
-`
+// let Maintitle = styled.div
+// `
+// color : #e30613
+// `
+
 
 export default function Gnb (){
 
@@ -14,7 +16,19 @@ export default function Gnb (){
   const toggleMenu = () => {
     setOpen(isOpen => !isOpen); // on,off 개념 boolean
     }
-  
+
+  const navList = [
+      {content:"청우식품", href:"/"
+    
+    },
+      {content:"회사소개", href:"/"},
+      {content:"청우소식", href:"/"},
+      {content:"이벤트", href:'/' },
+      {content:"인재채용" , href:'/'}
+    ];
+    
+
+
 
 
   return (
@@ -23,27 +37,24 @@ export default function Gnb (){
   <div className="gnb">
     <div className={isOpen ? "gnb_category" : "gnb_category on"} onClick={()=>toggleMenu()}>
     <ul className="category_inner"  >
-      <li>
-      <Maintitle className="gnb_title" > <Link to="/ "><FaAlignJustify className="menu_icon" size="16" color="#e30613"/>청우식품</Link></Maintitle>
 
-      </li>
+    { navList.map( (nav, idx)=>{
 
-      <li>
-      <div className="gnb_title"><Link to="/">회사소개</Link></div>
+      return (
+        <li key={idx}>
+          <div className="gnb_title">
+          <NavLink to={nav.href}> 
+          {idx===0 && <FaAlignJustify/>} {nav.content}
+          </NavLink>
+        </div>
+        </li>
+         )
+      }) 
+    }
 
-      </li>
-      <li>
-        <div className="gnb_title"><Link to="/">청우소식</Link></div>
 
-      </li>
-      <li>
-        <div className="gnb_title"><Link to="/">이벤트</Link></div>
 
-      </li>
-      <li>
-        <div className="gnb_title"><Link to="/">인재채용</Link></div>
 
-      </li>
     </ul>
   </div>
 
