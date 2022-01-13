@@ -4,7 +4,7 @@ export default function Unb (){
 
   const navList = [
     {icon:<BiUser size="26"/>, href:"main"},
-    {icon:<BiCartAlt size="26"/>, href:"review"}
+    {icon:<BiCartAlt size="26"/>, href:"/"}
   ];
 
   return (

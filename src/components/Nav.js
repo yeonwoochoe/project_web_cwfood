@@ -10,11 +10,6 @@ export default function Nav (){
     <nav className="navigation">
       <h2 className="blind">global navigation</h2>
       <Gnb/>
-
-
-
-
-
     </nav>
     </Fragment>
   )
