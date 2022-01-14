@@ -1,10 +1,12 @@
 
 import React from 'react';
 import Header from './components/Header';
-import Section from './components/Section';
-import NewArrival from './components/NewArrival';
-import './App.css';
 import Nav from './components/Nav';
+import MainSlideBanner from './components/MainSlideBanner';
+import NewArrival from './components/NewArrival';
+import SubBanner from './components/SubBanner.js';
+import BestItem from './components/BestItem.js';
+import './App.css';
 
 
 function App() {
@@ -12,8 +14,10 @@ function App() {
     <div className="App">
       <Header/>
       <Nav/>
-      <Section/>
+      <MainSlideBanner/>
       <NewArrival/>
+      <SubBanner/>
+      <BestItem/>
     </div>
   );
 }
