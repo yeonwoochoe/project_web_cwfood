@@ -2,7 +2,7 @@
 import React,  { useEffect, useState }  from 'react';
 import NewArrivalList from './NewArrivalList';
 import axios from 'axios';
-import '../style/NewArrival.scss';
+import '../style/Main.scss';
 
 
 export default function NewArrival() {

@@ -1,4 +1,4 @@
-import '../style/MainSlideBanner.scss';
+import '../style/Main.scss';
 import { Link } from 'react-router-dom';
 
 export default function MainSlideBanner(){

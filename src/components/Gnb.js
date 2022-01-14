@@ -1,5 +1,4 @@
 import React,{useState} from 'react';
-// import styled from 'styled-components';
 import { FaAlignJustify } from "react-icons/fa";
 import {NavLink} from 'react-router-dom';
 import {Link} from 'react-router-dom';

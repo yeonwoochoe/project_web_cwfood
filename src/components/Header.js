@@ -2,7 +2,7 @@ import Searchbox from './Searchbox';
 import Unb from './Unb';
 import { Link } from 'react-router-dom';
 
-import '../style/Header.scss';
+import '../style/Main.scss';
 
 import logo from './../cw_logo.svg';
 

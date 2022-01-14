@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import '../style/SubBanner.scss';
+import '../style/Main.scss';
 // import subImg from '../image/5e428ed460ffc3881382.png'
 
 

@@ -1,5 +1,5 @@
 import Gnb from './Gnb';
-import '../style/Nav.scss';
+import '../style/Main.scss';
 import { Fragment } from 'react';
 
 export default function Nav (){

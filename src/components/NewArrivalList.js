@@ -1,6 +1,5 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
-import '../style/NewArrival.scss';
 import ShoppingBag from '../image/icon/shopping-bag.svg'
 
 export default function NewArrivalList({data}) {
