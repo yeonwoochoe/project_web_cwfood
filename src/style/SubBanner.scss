@@ -1,0 +1,12 @@
+
+@import '../style/common/mixin';
+
+#subViewBox{
+  width: 100%;  height: 240px; 
+  margin-bottom: 100px;
+  .container { 
+    width: 100%; height:100%;  max-width: 1440px;
+    background-color: #e30613;  margin: auto;
+
+  }
+}
