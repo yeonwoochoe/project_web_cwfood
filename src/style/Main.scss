@@ -1,0 +1,32 @@
+// main.scss
+/* main.css */
+
+// @import "../common/variable";
+@import "../style/common/mixin.scss";
+// --------------------------------
+
+// --------------------------------
+
+// #wrap {
+//   width:100%;  
+//   height:auto; min-height:800px;
+//   background-color: #fff;
+//   @include mobile{ min-width:320px;  background-color: #fff; }
+//   // @include tablet{ background-color: #adf;  }
+//   // @include laptop{ background-color: #fdf;  }
+//   // @include pc{ background-color: #faa; }
+// }// #wrap 
+
+
+
+// -------------------------------------------
+  @import "../style/page/Header.scss";
+
+  @import "../style/page/Nav.scss";
+  @import "../style/page/MainSlideBanner.scss";
+  @import "../style/page/NewArrival.scss";
+  @import "../style/page/SubBanner.scss";
+  @import "../style/page/BestItem.scss";
+
+
+// -------------------------------------------
