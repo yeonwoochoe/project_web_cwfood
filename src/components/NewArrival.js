@@ -1,11 +1,11 @@
 
 import React,  { useEffect, useState }  from 'react';
-import NewArrivalList from './NewArrivalList';
+import ProductList from './ProductList';
 import axios from 'axios';
-import '../style/Main.scss';
+import '../style/page/NewArrival.scss';
 
 
-export default function NewArrival() {
+export default function NewArrival(props) {
   const dataUrl = './data/NewPdList.json';
   const [dataList, setDataList] = useState([]);
 
@@ -24,12 +24,12 @@ export default function NewArrival() {
     <article id="newPdBox">
       <h2 className="blind">신상품</h2>
       <div className="main_title">
-        <h3><span>New Arrival</span>
-         새로운 맛 <strong>신상품</strong>
-        </h3>
-        </div>
+      <h3><span>{props.heading.mainTitle}</span>
+      {props.heading.subTitle}<strong>{props.heading.subText}</strong>
+      </h3>
+    </div>
         <ul className="pd_list">
-        { dataList.map( (product,idx)=> <NewArrivalList  key={idx} data={product} />  )}      
+        { dataList.map( (product,idx)=> <ProductList  key={idx} data={product} />  )}      
         </ul>
   
     </article>

@@ -2,7 +2,7 @@
 import React,  { useEffect, useState }  from 'react';
 import BestItemList from './BestItemList';
 import axios from 'axios';
-import '../style/Main.scss';
+import '../style/page/BestItem.scss';
 
 
 export default function BestItem() {

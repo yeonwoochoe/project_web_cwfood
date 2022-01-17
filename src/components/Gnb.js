@@ -52,6 +52,7 @@ export default function Gnb (){
           <li><Link to="/">비스킷</Link></li>
           <li><Link to="/">젤리</Link></li>
           <li><Link to="/">캔디</Link></li>
+          <li><Link to="/">스낵</Link></li>
           <li><Link to="/">전통과자</Link></li>
     </ul>
     <ul className="list_inner">
