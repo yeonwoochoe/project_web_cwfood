@@ -30,9 +30,28 @@ $baseSize: 16;
 }
 
 
+//hover
+
+@mixin hoverT($scale: 1.1, $ms: 300) {
+	&:hover {
+    text-decoration: none;
+		transform: scale($scale);
+		transition: all $ms + ms ease;
+		@content;
+	}
+}
+
+// blind
+@mixin blind(){
+  display: block; width: 0; height: 0;
+  position: absolute; z-index:-1;
+  overflow: hidden;
+}
+
+
 
 // image
-$imgPath: '../../public/';
+$imgPath: '../../image/event/';
 
 // @mixin img와 @mixin full은 연결되어 있다(full 안에 img가 들어가 있음)
 // 먼저 img를 정의한 뒤에 img를 포함하고 있는 full을 정의해야 한다
@@ -50,6 +69,7 @@ $imgPath: '../../public/';
 	}
 	@content;
 }
+
 @mixin full($file:false, $size:initial, $position:50% 50%, $repeat:no-repeat) {
 	display: block; width: 100%; height: 100%;
 	// $img가 초기값인 false일 경우에는 if문이 처리되지 않음

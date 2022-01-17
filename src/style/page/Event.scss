@@ -1,0 +1,107 @@
+//NewsAndEvent
+
+#infoBox {width: 100%; height: auto; background-color:#fff;
+
+  .containner{
+    display: flex; justify-content: center;
+    width: auto; height: 100%; margin: auto;   }
+}
+
+.gift_area  {
+  position: relative;
+width: 640px; height: 700px;
+background-image: url('../../image/event/5f333d76ac8932117517.jpeg');
+background-repeat: no-repeat;
+background-size: cover;
+margin-right: 50px; 
+ border-radius: 20px;
+
+
+ a{ @include full;
+  &:before,&::before{ 
+    content: "자세히 보기";     
+    position: absolute;  z-index: 1;
+    display: none;   
+    top: 0;left: 0;right: 0;bottom: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center; line-height: 600px; font-size:48px; font-weight:
+    500; text-decoration: underline;
+    color:#fff; border-radius: 20px;
+  }
+  &:hover{
+    &:before,&::before{ display: block;}
+  }
+ }
+
+
+
+
+
+  dt {font-size: 30px; font-weight: 700; padding: 30px 0;}
+  dd {font-size: 1rem; font-weight: 400;
+  white-space:nowrap; word-break:break-all;
+  overflow: hidden; text-overflow:ellipsis;}
+}
+
+
+
+
+
+
+
+
+
+
+.event_area{ width: 600px; height:auto; background-color: #dfd; 
+  div {
+    position: relative;
+    width: 100%; height:325px; ;      margin-bottom:50px;
+  &:last-child{margin-bottom: 0;}
+a {border-radius: 20px;
+  &:before,&::before{ 
+    content: "자세히 보기";     
+    position: absolute;  z-index: 1;
+    display: none;   
+    top: 0;left: 0;right: 0;bottom: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center; line-height: 325px; font-size:48px; font-weight:
+    500; text-decoration: underline;
+    color:#fff; border-radius: 20px;
+  }
+  &:hover{
+    &:before,&::before{ display: block;}
+  }}
+}
+  
+  .new > a{
+      @include full;
+      background-image: url('../../image/event/event_01.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    }
+    
+
+  .quiz > a{
+    @include full;
+    background-image: url('../../image/event/event_02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; ;}
+  
+
+
+}
+
+// &:before,::before {
+//   content: "";
+//   display: block;
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  right: 0;
+//  bottom: 0;
+//  z-index: 0;
+//  background-color: rgba(255, 255, 255, 0.5);}
+
