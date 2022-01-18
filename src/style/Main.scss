@@ -2,7 +2,9 @@
 /* main.css */
 
 // @import "../common/variable";
-@import "../style/common/mixin.scss";
+@import "../style/common/variable.scss";
+@import "../style/common/mixin.scss"; 
+
 // --------------------------------
 
 // --------------------------------
@@ -30,6 +32,9 @@
   @import "../style/page/BrandPdAbout.scss";
   @import "../style/page/Event.scss";
   @import "../style/page/BrandIntro.scss";
+  @import "../style/page/Footer.scss";
 
+
+  
 
 // -------------------------------------------

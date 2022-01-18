@@ -13,7 +13,7 @@ span {display: block;font-size: 32px;
 
 .pd_list {
   display: flex; justify-content: space-between;
-  width: 100%; max-width: 1280px; height: auto; margin: auto; background-color: #f0e;
+  width: 100%; max-width: 1280px; height: auto; margin: auto; 
   & > li {  width: 290px;flex-shrink:0;
     background-color: #fff;
   }

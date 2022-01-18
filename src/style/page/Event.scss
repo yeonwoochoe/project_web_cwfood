@@ -1,6 +1,6 @@
 //NewsAndEvent
 
-#infoBox {width: 100%; height: auto; background-color:#fff;
+#infoBox {width: 100%; height: auto; background-color:#fff; margin-bottom: 200px; 
 
   .containner{
     display: flex; justify-content: center;
@@ -53,7 +53,7 @@ margin-right: 50px;
 
 
 
-.event_area{ width: 600px; height:auto; background-color: #dfd; 
+.event_area{ width: 600px; height:auto;
   div {
     position: relative;
     width: 100%; height:325px; ;      margin-bottom:50px;
