@@ -10,6 +10,7 @@ import MdPickItem from './components/MdPickItem.js';
 import BrandPdAbout from './components/BrandPdAbout.js';
 import Event from './components/Event.js';
 import News from './components/News.js';
+import Footer from './components/Footer.js';
 import './App.css';
 
 
@@ -41,6 +42,7 @@ function App() {
       <BestItem/> 
       <News/>
       <Event/>
+      <Footer/>
     </div>
   );
 }
