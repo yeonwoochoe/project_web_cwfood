@@ -1,24 +1,19 @@
-// import NotFound from '../component/NotFound';
+import React from 'react';
+import Cart from '../page/Cart';
+import Login from '../page/Login';
+import PageError from '../page/PageError'
+import Home from '../page/Home/Home';
+import { Routes, Route } from 'react-router-dom';
 
+function RouterPage() {
+  return (
+    <Routes>
+      <Route  path="/"     element={<Home />} /> 
+      <Route  path="Cart"  element={<Cart />} />
+      <Route  path="Login" element={<Login />} />
+      <Route  path="/*"    element={<PageError />} />
+    </Routes>
+  )
+}
 
-
-
-
-// export default function RouterPage() {
-//   return (
-//     <Routes>
-//       {/* <Route /> 화면에 노출될 페이지들의 목록 */}
-//       <Route path="" element={<Main />} />
-//       <Route path="/" element={<Main />} />
-//       <Route path="/main" element={<Main />} />
-//       <Route path="/review" element={<Review />} />
-//       <Route path="/cardList" element={<CardList />} />
-//       <Route path="/manual" element={<Manual />} />
-//       <Route path="/person" element={<Person />} />
-//       <Route path="/rule" element={<Rule />} />
-//       <Route path="/product" element={<Product />} />
-//       <Route path="/event" element={<Event />} />
-//       <Route path="*" element={<NotFound />} />
-//     </Routes>
-//   )
-// }
+export default RouterPage
