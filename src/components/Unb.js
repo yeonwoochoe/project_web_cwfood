@@ -1,10 +1,10 @@
 import {BiUser,BiCartAlt } from "react-icons/bi";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 export default function Unb (){
 
   const navList = [
-    {icon:<BiUser size="26"/>, href:"main"},
-    {icon:<BiCartAlt size="26"/>, href:"/"}
+    {icon:<BiUser size="26"/>, href:"Login"},
+    {icon:<BiCartAlt size="26"/>, href:"Cart"}
   ];
 
   return (
@@ -14,7 +14,7 @@ export default function Unb (){
     { navList.map( (nav, idx)=>{
       return (
         <li key={idx}>
-          <Link to="/">{nav.icon}<span>user</span></Link>
+          <NavLink to={nav.href}>{nav.icon}<span>user</span></NavLink>
         </li>
         )
     }) 
