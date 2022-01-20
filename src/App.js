@@ -2,8 +2,8 @@
 import React from 'react';
 import Header from './components/Header';
 import Nav from './components/Nav';
-import SimpleSlider from './components/SimpleSlider.js';
-// import MainSlideBanner from './components/MainSlideBanner';
+import images from "./components/images";
+import MainCarouselBanner from './components/MainCarouselBanner';
 import NewArrival from './components/NewArrival';
 import SubBanner from './components/SubBanner.js';
 import BestItem from './components/BestItem.js';
@@ -35,8 +35,7 @@ function App() {
     <div className="App">
       <Header/>
       <Nav/>
-      <SimpleSlider/>
-      {/* <MainSlideBanner/> */}
+      <MainCarouselBanner images={images}/>
       <NewArrival heading={newArrival}/>
       <BrandPdAbout/>
       <MdPickItem heading={mdPick}/>

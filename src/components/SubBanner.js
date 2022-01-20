@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import '../style/page/SubBanner.scss';
-// import subImg from '../image/5e428ed460ffc3881382.png'
-
 
 export default function SubBanner() {
   return (
