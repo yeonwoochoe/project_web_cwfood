@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Nav from './components/Nav';
 
 import Footer from './components/Footer.js';
-import RouterPage from './Router/RouterPage';
+import RouterPage from './router/RouterPage';
 import {BrowserRouter} from 'react-router-dom';
 import './App.css';
 
