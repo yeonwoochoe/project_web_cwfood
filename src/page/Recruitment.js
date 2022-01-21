@@ -1,12 +1,12 @@
 import '../style/page/Contents/temporary.scss'
 
-function Login() {
+function Recruitment() {
   return (
-    <section id="loginBox">
-      <h2>Loging page</h2>
+    <section id="resruitBox">
+      <h2>인재채용 page</h2>
       <p>현재 페이지 준비중입니다.!</p>
     </section>
   )
 }
 
-export default Login
+export default Recruitment

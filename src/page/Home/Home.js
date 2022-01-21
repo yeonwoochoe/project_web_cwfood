@@ -7,7 +7,7 @@ import BestItem from '../../components/BestItem.js';
 import MdPickItem from '../../components/MdPickItem.js';
 import BrandPdAbout from '../../components/BrandPdAbout.js';
 import Event from '../../components/Event.js';
-import News from '../../components/News.js';
+import BrandIntroduce from '../../components/BrandIntroduce.js';
 
 function Home() {
 
@@ -32,7 +32,7 @@ function Home() {
   <MdPickItem heading={mdPick}/>
   <SubBanner/>
   <BestItem/> 
-  <News/>
+  <BrandIntroduce/>
   <Event/>
   </>);
 }
