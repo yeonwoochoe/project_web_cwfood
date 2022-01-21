@@ -4,7 +4,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function ProductConList({data}) {
-  console.log( data );
   return (  
     <li><Link to="/">
       <div className='img_detail'></div>

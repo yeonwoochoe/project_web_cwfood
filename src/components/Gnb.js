@@ -11,24 +11,29 @@ import {Link} from 'react-router-dom';
 
 export default function Gnb (){
 
+  // const [display, setDisplay] = useState('');
+
   const [isOpen, setOpen] = useState(true);  // 메뉴의 초기값을 true 설정
+
   const toggleMenu = () => {
     setOpen(isOpen => !isOpen); // on,off 개념 boolean
-    }
+  }
+
 
   const gnbTitle = [
-      {content:"청우식품", href:"/"},
-      {content:"회사소개", href:"/"},
-      {content:"청우소식", href:"/"},
-      {content:"이벤트", href:'/' },
-      {content:"인재채용" , href:'/'}
+      {content:"청우식품", href:"BrandProduct"},
+      {content:"회사소개", href:"Company"},
+      {content:"청우소식", href:"News"},
+      {content:"이벤트", href:'Event' },
+      {content:"인재채용" , href:'Recruitment'}
     ];
     
   return (
 
-
+    
   <div className="gnb">
-    <div className={isOpen ? "gnb_category" : "gnb_category on"} onClick={()=>toggleMenu()}>
+    <div className={isOpen ? "gnb_category" : "gnb_category on"} onMouseOver={()=>toggleMenu() }
+    >
     <ul className="category_inner"  >
     { gnbTitle.map( (nav, idx)=>{
       return (
@@ -46,8 +51,8 @@ export default function Gnb (){
     </ul>
   </div>
 
-  <div className={isOpen ? "gnb_list" : "gnb_list on"}>
-    <ul className="list_inner">
+  <div className={!isOpen ? "gnb_list on" : "gnb_list"} >
+    <ul className="list_inner" >
           <li><Link to="/">파이/쿠키</Link></li>
           <li><Link to="/">비스킷</Link></li>
           <li><Link to="/">젤리</Link></li>
