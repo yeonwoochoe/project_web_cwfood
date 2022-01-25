@@ -14,6 +14,8 @@ const cssstyle = `
   padding: 50px 100px;
    
 }
+
+
 .slick-next {
   width: 40px;
   height: 40px;
@@ -27,7 +29,7 @@ const cssstyle = `
     left: -50px;}
 
 .slide_img {
-    width: 24vw;
+    width: 600px;
     height:400px;
     margin : auto;
     color: #fff;
@@ -58,7 +60,7 @@ const settings = {
   centerMode: true,
   infinite: true,
   centerPadding: "90px",
-  slidesToShow: 3,
+  slidesToShow: 2,
   speed: 500 ,
 
 };
@@ -70,7 +72,7 @@ const settings = {
 				<style>{cssstyle}</style>
 				<Slider {...settings}>
         {images.map((item) => (
-        <div key={item.id}>
+        <div className="slide_inner" key={item.id}>
           <img className="slide_img" src={item.src}  alt={item.alt} />
         </div>
       ))}

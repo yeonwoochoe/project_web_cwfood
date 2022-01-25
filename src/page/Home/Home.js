@@ -2,11 +2,11 @@ import React from 'react';
 import images from "../../components/images";
 import MainCarouselBanner from '../../components/MainCarouselBanner';
 import NewArrival from '../../components/NewArrival';
-import SubBanner from '../../components/SubBanner.js';
-import BestItem from '../../components/BestItem.js';
-import MdPickItem from '../../components/MdPickItem.js';
-import BrandPdAbout from '../../components/BrandPdAbout.js';
-import Event from '../../components/Event.js';
+import SubBanner from '../../components/SubBanner';
+import BestItem from '../../components/BestItem';
+import MdPickItem from '../../components/MdPickItem';
+import BrandPdAbout from '../../components/BrandPdAbout';
+import Event from '../../components/Event';
 import BrandIntroduce from '../../components/BrandIntroduce.js';
 
 function Home() {
