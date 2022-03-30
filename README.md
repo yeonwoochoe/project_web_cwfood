@@ -3,8 +3,8 @@
 <br/>
 <br/>
 
-![kindpng_442595 copy](https://user-images.githubusercontent.com/89890240/160824514-c2fbac63-e897-4225-b774-79eba5eb8b64.png)
- 
+![cw](https://user-images.githubusercontent.com/89890240/160826571-b92226b4-5873-40a7-8f37-ae909197a04c.jpg)
+
 <br/>
 
 ## 📌 프로젝트 개요
